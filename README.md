@@ -36,9 +36,9 @@
      - Запустите контейнер базы данных docker-compose up -d 
 7. **Запуск приложения**:
      - Заполнить .env файл с подключением. DATABASE_URL=......
-     - Сделайть миграции alembic revision --autogenerate -m "..."
-     - Применить миграции alembic upgrade head
-     - Заполнить API ключ в модуле app/utils.py
+     - В alembic ini ввести sqlalchemy.url = "...."
+     - Заполнить API ключ в модуле app/utils.py HUNTER_API_KEY = '.....'
+     - Ввести команду docker-compose up -d 
      - Запуск сервера uvicorn main:app --reload  
 8.  Войти по адрессу http://127.0.0.1:8000/docs/ 
 9. Реализован кеш с помощью словаря.
