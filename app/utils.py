@@ -2,7 +2,7 @@ import httpx
 from fastapi import HTTPException
 from starlette import status
 
-HUNTER_API_KEY = 'e1d2ff0438be44b0e1e0b69b9e5a25bdc46084d0'
+HUNTER_API_KEY = 'Your_KEY'
 
 
 async def verify_email(email: str):
