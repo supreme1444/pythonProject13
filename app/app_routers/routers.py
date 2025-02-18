@@ -27,6 +27,8 @@ async def register(
         Hunter IO.
 
     """
+    user.email = user.email.lower()
+    user.user = user.user.lower()
     await services_user_check(user)
     if user.referral_code != "":
         try:
