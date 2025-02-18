@@ -39,7 +39,7 @@
      - Заполнить .env файл с подключением. DATABASE_URL=......
      - В alembic ini ввести sqlalchemy.url = "...."
      - Заполнить API ключ в модуле app/utils.py HUNTER_API_KEY = '.....'
-     - Ввести команду docker-compose up -d 
+     - Ввести команду docker-compose up --build 
      - Запуск сервера uvicorn main:app --reload  
 8.  Войти по адрессу http://127.0.0.1:8000/docs/ 
 9. Реализован кеш с помощью словаря.
