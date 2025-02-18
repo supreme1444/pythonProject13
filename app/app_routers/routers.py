@@ -88,6 +88,7 @@ async def get_referral_code_by_email(
     """
         Получение реферального кода по email.
     """
+    email = email.lower()
     try:
         user_email = UserBase(email=email)
     except ValidationError as e:
