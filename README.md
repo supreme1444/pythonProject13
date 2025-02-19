@@ -40,7 +40,8 @@
      - В alembic ini ввести sqlalchemy.url = "...."
      - Заполнить API ключ в модуле app/utils.py HUNTER_API_KEY = '.....'
      - Ввести команду docker-compose up --build 
-     - Запуск сервера uvicorn main:app --reload  
+     - Запуск сервера uvicorn main:app --reload
+     - Если сервис web не сделал миграцию автоматически запустить его еще раз.  
 2.  Войти по адрессу http://127.0.0.1:8000/docs/ 
 3. Реализован кеш с помощью словаря.
 4. Так же реализован Hunter IO для проверки указанного email 	адреса;
